@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
-import BasicColumnsGrid from "./table/Tabletest.js";
+import UserList from "/user-list-module/userlist";
 export default function App() {
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
-      <BasicColumnsGrid />
+      // <BasicColumnsGrid />
+      <UserList />
     </div>
   );
 }

@@ -11,46 +11,6 @@ export default function BasicColumnsGrid() {
             id: 1,
             username: "defunkt",
             age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
-          },
-          {
-            id: 1,
-            username: "defunkt",
-            age: 38
           }
         ]}
       />
