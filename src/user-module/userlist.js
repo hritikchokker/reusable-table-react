@@ -7,7 +7,6 @@ export default function UserList() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(res => res.json())
       .then(res => {
-        console.log(res, "res");
         if (res) {
           const item = res[0];
           const clm = [];
@@ -16,6 +15,7 @@ export default function UserList() {
           });
           setUserColumns(clm);
           setUserRows(res);
+          console.log(res, "res");
         }
       })
       .catch(err => console.log(err));
