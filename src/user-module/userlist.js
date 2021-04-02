@@ -1,11 +1,28 @@
-import React, { useState } from "react";
-import BasicColumnsGrid from "./table/Tabletest";
+import React, { useState, useLayoutEffect } from "react";
+import BasicColumnsGrid from ".././table/Tabletest";
 export default function UserList() {
-  // const [userList, setUserList] = useState([]);
-
+  const [userRows, setUserRows] = useState([]);
+  const [userColums, setUserColumns] = useState([]);
+  // useLayoutEffect(() => {
+  //   // fetch("https://jsonplaceholder.typicode.com/users")
+  //   //   .then(res => res.json())
+  //   //   .then(res => {
+  //   //     console.log(res, "res");
+  //   //     if(res){
+  //   //       const item = res[0];
+  //   //       const clm=[];
+  //   //       Object.keys(item=>{
+  //   //         clm.push({field:item});
+  //   //       })
+  //   //       setUserColumns(clm)
+  //   //       setUserRows(res);
+  //   //     }
+  //   //   })
+  //   //   .catch(err => console.log(err));
+  // }, []);
   return (
     <>
-      <BasicColumnsGrid />
+      <BasicColumnsGrid rows={userRows} columns={userColums} />
     </>
   );
 }
