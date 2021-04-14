@@ -9,9 +9,9 @@ export default function UserList() {
       .then(res => {
         if (res) {
           const item = res[0];
+          console.log(res, "item");
           const clm = [];
           Object.keys(item).forEach(el => {
-            console.log(el, "elel");
             if (el === "name") {
               clm.push({
                 field: el,
