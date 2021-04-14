@@ -17,7 +17,8 @@ export default function BasicColumnsGrid({ rows, columns }) {
         onPageChange={params => {
           setPage(params.page);
         }}
-        autoPageSize
+        // autoPageSize
+        rowsPerPageOptions={[5, 10, 20]}
         pageSize={10}
         pagination
         {...data}
